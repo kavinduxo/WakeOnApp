@@ -46,14 +46,14 @@ namespace WakeOnApp
             InitializeComponent();
             btnOff.Enabled = false;
             btnOn.Enabled = true;
-            dfStatus.Text = "On Sleep!";
+            dfStatus.Text = Properties.Resources.OffStatus;
         }
 
         private void btnOn_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
-                dfStatus.Text = "Running...";
+                dfStatus.Text = Properties.Resources.OnStatus;
                 btnOn.Enabled = false;
                 btnOff.Enabled = true;
                 this.TopMost = true;
@@ -69,7 +69,7 @@ namespace WakeOnApp
         {
             if (e.Button == MouseButtons.Left)
             {
-                dfStatus.Text = "On Sleep!";
+                dfStatus.Text = Properties.Resources.OffStatus;
                 btnOn.Enabled = true;
                 btnOff.Enabled = false;
                 awakeTimer.Stop();
@@ -83,6 +83,13 @@ namespace WakeOnApp
             awakeTimer.Interval = 60000;
 
             SendKeys.Send("{F15}");
+        }
+
+        private void WakeOnApp_Load(object sender, EventArgs e)
+        {
+            Icon applicationIcon = new Icon(Properties.Resources.wakeonapp_icon, Properties.Resources.wakeonapp_icon.Size);
+
+            this.Icon = applicationIcon;
         }
     }
 }

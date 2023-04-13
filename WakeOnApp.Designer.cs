@@ -105,6 +105,7 @@
             this.Controls.Add(this.lblInfo);
             this.Name = "WakeOnApp";
             this.Text = "Wake On Monitor";
+            this.Load += new System.EventHandler(this.WakeOnApp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
