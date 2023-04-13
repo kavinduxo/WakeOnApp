@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WakeOnApp));
             this.lblInfo = new System.Windows.Forms.Label();
             this.btnOn = new System.Windows.Forms.Button();
             this.btnOff = new System.Windows.Forms.Button();
@@ -103,6 +104,7 @@
             this.Controls.Add(this.btnOff);
             this.Controls.Add(this.btnOn);
             this.Controls.Add(this.lblInfo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WakeOnApp";
             this.Text = "Wake On Monitor";
             this.Load += new System.EventHandler(this.WakeOnApp_Load);
