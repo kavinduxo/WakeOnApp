@@ -23,7 +23,7 @@ This C# GUI application provides the following features:
 
 1. Download and install the .NET Framework (if not already installed) from the Microsoft website: https://dotnet.microsoft.com/download/dotnet-framework.
 
-2. Download and run the executable file of the C# GUI application.
+2. Download and run the executable file of the WakeOnApp application (setup.exe).
 
 3. Use the GUI interface to define your click tasks. Specify the click location on the screen by clicking on the screen image, set the interval between clicks, and the duration of the task.
 
