@@ -7,7 +7,7 @@
     <ProjectGuid>{4A3EE54A-10D3-4271-BC33-EE8986EE57AE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WakeOnApp</RootNamespace>
-    <AssemblyName>WakeOnApp</AssemblyName>
+    <AssemblyName>WakeOn App</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -60,6 +60,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>wakeonapp_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -123,10 +126,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="media\wakeonapp-icon.ico" />
+    <None Include="media\wakeonapp_icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="media\wakeonapp_icon.ico" />
+    <Content Include="wakeonapp_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
